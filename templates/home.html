@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Prasad Salunke — Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --text:#333;
+      --muted:#666;
+      --light:#8a8a8a;
+      --brand:#2f6feb;
+      --card:#fafafa;
+      --border:#e8e8e8;
+      --maxw:860px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif;color:var(--text);line-height:1.55;background:#fff}
+    header{padding:28px 16px 8px;text-align:center}
+    h1{font-size:40px;font-weight:600;margin:0 0 8px}
+    .sub{color:var(--muted);margin:0}
+    #container{max-width:var(--maxw);margin:0 auto;padding:0 16px 48px}
+    .hero{
+      width:100%;height:360px;object-fit:cover;border-radius:16px;margin:16px 0 24px;border:1px solid var(--border)
+    }
+    h2{font-size:28px;font-weight:600;color:#444;margin:28px 0 12px;text-align:center}
+    p{color:#404040}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width: 800px){ .grid{grid-template-columns:1fr 1fr} }
+    .card{
+      background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px
+    }
+    .card h3{margin:0 0 6px;color:#444}
+    .meta{font-size:12px;color:var(--light);margin-bottom:10px}
+    .badge{display:inline-block;font-size:12px;border:1px solid var(--border);padding:4px 8px;border-radius:999px;margin:4px 6px 0 0;background:#fff}
+    .kicker{font-weight:600;color:#555;margin-top:10px}
+    .skills-list{display:flex;flex-wrap:wrap;margin-top:6px}
+    .section{margin-top:8px}
+    .btn{
+      display:inline-block;margin-top:14px;padding:10px 14px;border-radius:999px;border:1px solid var(--brand);color:#fff;background:var(--brand);text-decoration:none
+    }
+    .two-col{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width: 900px){ .two-col{grid-template-columns:1fr 1fr} }
+    ul{margin:8px 0 0 18px;color:#404040}
+    footer{margin-top:28px;text-align:center;color:var(--light)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Prasad Salunke's Profile</h1>
+    <p class="sub">Industrial Engineering & Management (NIT Calicut) • CGPA 8.85</p>
+  </header>
+
+  <div id="container">
+    <img class="hero" src="https://3dd2618d-3d08-45df-bd47-17824ed983fc-00-1t0sfhk9ip0gt.pike.replit.dev/static/pakata-goh-RDolnHtjVCY-unsplash.jpg" alt="Abstract banner">
+
+    <h2>About Me</h2>
+    <p>
+      I’m Prasad Dattaram Salunke, an Industrial Engineering & Management graduate from NIT Calicut. I work across
+      Operations Research, Data Science, and Simulation building mathematical models and data-driven solutions for
+      logistics and supply chain. I enjoy turning complex problems into clean models and code.
+    </p>
+
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <!-- Project 1 -->
+      <article class="card">
+        <h3>Flying Sidekick Travelling Salesman Problem via Hybrid Artificial Bee Colony & B&amp;B algorithm</h3>
+        <div class="meta">Jan 2024 – Jun 2025 • NIT Calicut</div>
+        <div class="section">
+          <div class="kicker">Summary</div>
+          <p>
+            Solved FSTSP using branch-and-bound with cutting planes (Gurobi) on 10 &amp; 20-customer instances to evaluate
+            truck–drone last-mile logistics; designed a hybrid ABC + 2-opt heuristic and presented at AEOIT (5th Intl. Conf.).
+          </p>
+        </div>
+        <div class="section">
+          <div class="kicker">Skill set</div>
+          <div class="skills-list">
+            <span class="badge">Python</span><span class="badge">Gurobi / GurobiPy</span>
+            <span class="badge">Branch &amp; Bound</span><span class="badge">Cutting planes</span>
+            <span class="badge">Metaheuristics (ABC)</span><span class="badge">2-opt</span>
+            <span class="badge">Last-mile logistics</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="kicker">How I used these skills</div>
+          <ul>
+            <li>Modeled FSTSP and implemented B&amp;B with cuts to compute exact baselines.</li>
+            <li>Built a hybrid ABC + 2-opt to reach high-quality solutions quickly.</li>
+            <li>Benchmarked travel time and runtime across 10/20-customer cases.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <h3>Column Generation for Multi-Recipe Pulp Mill Planning</h3>
+        <div class="meta">Jan 2025 – Jun 2025 • NIT Calicut</div>
+        <div class="section">
+          <div class="kicker">Summary</div>
+          <p>
+            Implemented a column-generation framework in GurobiPy for large-scale production planning with campaign
+            changeovers; used a shortest-path subproblem to generate negative-reduced-cost columns.
+          </p>
+        </div>
+        <div class="section">
+          <div class="kicker">Skill set</div>
+          <div class="skills-list">
+            <span class="badge">Python</span><span class="badge">GurobiPy</span><span class="badge">Column Generation</span>
+            <span class="badge">Shortest Path</span><span class="badge">Supply Chain</span>
+            <span class="badge">Operations Research</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="kicker">How I used these skills</div>
+          <ul>
+            <li>Formulated the master problem for daily campaign selection under changeover costs.</li>
+            <li>Built a pricing problem as a shortest-path to create new production columns.</li>
+            <li>Iterated until no improving columns remained, yielding cost-optimal plans.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <h3>Inventory Management Optimization with Reinforcement Learning</h3>
+        <div class="meta">Nov 2024 – Jan 2025 • NIT Calicut</div>
+        <div class="section">
+          <div class="kicker">Summary</div>
+          <p>
+            Developed a Q-learning simulation to learn reorder policies under uncertain demand and lead time,
+            reducing stockouts and overstock simultaneously.
+          </p>
+        </div>
+        <div class="section">
+          <div class="kicker">Skill set</div>
+          <div class="skills-list">
+            <span class="badge">Python</span><span class="badge">Reinforcement Learning</span>
+            <span class="badge">Q-learning</span><span class="badge">Simulation</span>
+            <span class="badge">Inventory Theory</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="kicker">How I used these skills</div>
+          <ul>
+            <li>Encoded state–action space for (s, Q)-style reorder decisions.</li>
+            <li>Tuned rewards to penalize stockouts and carrying costs.</li>
+            
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card">
+        <h3>Supply Chain Network Optimization (Cost Minimization)</h3>
+        <div class="meta">Oct 2024 – Nov 2024 • NIT Calicut</div>
+        <div class="section">
+          <div class="kicker">Summary</div>
+          <p>
+            Built a mathematical program to minimize transportation cost subject to demand, supply,
+            and depot capacity constraints.
+          </p>
+        </div>
+        <div class="section">
+          <div class="kicker">Skill set</div>
+          <div class="skills-list">
+            <span class="badge">Python</span><span class="badge">GurobiPy</span>
+            <span class="badge">Linear Programming</span><span class="badge">Network Modeling</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="kicker">How I used these skills</div>
+          <ul>
+            <li>Formulated flows and capacity constraints with a clean LP.</li>
+            <li>Solved and analyzed marginal costs and binding constraints.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="card">
+        <h3>Demand Forecasting for a Meal Delivery Company</h3>
+        <div class="meta">Apr 2024 • NIT Calicut</div>
+        <div class="section">
+          <div class="kicker">Summary</div>
+          <p>
+            Cleaned anomalies using unsupervised methods and forecasted future sales with XGBoost
+            and time-series techniques.
+          </p>
+        </div>
+        <div class="section">
+          <div class="kicker">Skill set</div>
+          <div class="skills-list">
+            <span class="badge">Python</span><span class="badge">XGBoost</span>
+            <span class="badge">Time Series</span><span class="badge">Anomaly Detection</span>
+            <span class="badge">Pandas / NumPy</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="kicker">How I used these skills</div>
+          <ul>
+            <li>Detected and removed outliers to stabilize the forecasting signal.</li>
+            <li>Tuned models and checked residual diagnostics for drift.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>Technical</h3>
+        <div class="skills-list" aria-label="Technical skills">
+          <span class="badge">Python</span><span class="badge">SQL</span><span class="badge">Gurobi / GurobiPy</span>
+          <span class="badge">Advanced Excel</span><span class="badge">Operations Research</span>
+          <span class="badge">Optimization</span><span class="badge">Simulation</span>
+          <span class="badge">Forecasting</span><span class="badge">Metaheuristics</span>
+        <span class="badge">Machine Learning</span><span class="badge">Java</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Other</h3>
+        <div class="skills-list" aria-label="Other skills">
+          <span class="badge">Windows</span><span class="badge">Communication</span><span class="badge">Presentation</span>
+          <span class="badge">Marathi</span><span class="badge">Hindi</span><span class="badge">English</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <article class="card">
+      <h3>Graduate Engineering Trainee — Intervalve Poonawalla</h3>
+      <div class="meta">Jan 2022 – Aug 2023</div>
+      <ul>
+        <li>Prepared CAD drawings and BOMs per customer orders.</li>
+        <li>Led data-driven material consumption analysis to support supply chain & procurement forecasting.</li>
+      </ul>
+    </article>
+
+    <div style="text-align:center">
+      <a class="btn" href="mailto:salunkeprasad922@gmail.com">Contact info</a>
+    </div>
+
+    <footer>
+      © Prasad Dattaram Salunke • NIT Calicut • <a href="mailto:salunkeprasad922@gmail.com">salunkeprasad922@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+  
